@@ -22,6 +22,7 @@
     importCss: function () {
       // @TODO proper theme management
       $(document.head).append($('<link/>', {href: _.getStrapdownOrigin() + '/strapdown.css', rel: 'stylesheet'}));
+      $(document.head).append($('<link/>', {href: _.getStrapdownOrigin() + '/local.css', rel: 'stylesheet'}));
     },
 
     updateHead: function () {
@@ -36,7 +37,7 @@
                               '   Table of Contents' +
                               ' </button>',
           tocInsertionPoint = '<div class="toc collapse navbar-collapse"></div>',
-          navbarTitle       = '<div id="headline" class="navbar-brand">' + settings.navbar.title +'</div>'
+          navbarTitle       = '<div id="headline" class="navbar-brand"><a href="/">' + settings.navbar.title +'</a></div>'
           ;
 
       var newNode = document.createElement('div');
