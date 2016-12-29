@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Sharding</title>
+  <xmp style="display:none">
+_“Scale out the management of a large number of domain objects by grouping them into shards based on unique and stable object properties.”_
+
+The [Domain Object pattern](domain-object.html) gives you the ability to wrap
+the domain’s state in small components that can, in principle, be distributed
+easily across a cluster of network nodes in order to provide the resources for
+representing even very large domains that cannot be held in memory by a single
+machine. The difficulty then becomes how to address the individual domain
+objects without having to maintain a directory that lists every object’s
+location—such a directory could easily reach a size that is impractical to hold
+in memory.
+
+The Sharding pattern places an upper bound on the size of the directory by
+grouping the domain objects into a configurable number of shards—the domain is
+fractured algorithmically into pieces of manageable size. The term
+algorithmically means the association between objects and shards is determined
+by a fixed formula that can be evaluated whenever an object needs to be
+located.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

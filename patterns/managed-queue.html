@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Managed queue</title>
+  <xmp style="display:none">
+_“Manage an explicit input queue, and react to its fill level.”_
+
+One of the conclusions drawn from analyzing the [Pull pattern](pull.html) is that it can be
+used to mediate back pressure across multiple processing steps in a chain of
+components. Transmitting back pressure means halting the entire pipeline when
+the a consumer is momentarily overwhelmed, which may, for example, be caused by
+unfair scheduling or other execution artifacts, leading to avoidable
+inefficiencies in the system.
+
+This kind of friction can lead to “stuttering” behavior in a processing engine,
+where short bursts of messages alternate with periods of inactivity during
+which back-pressure signals travel through the system. These bursts can be
+smoothed out by employing buffers that allow the data to keep flowing even
+during short back-pressure situations. These buffers are queues that
+temporarily hold messages while remembering their ordering. We call them
+managed queues because their use extends beyond this direct benefit: queues can
+be used to monitor and steer the performance of a messaging system. Buffering
+and managed queues are even more important at the boundaries of a system that
+employs back pressure: if data or requests are ingested from a source that
+cannot be slowed down, you need to mediate between the bounded internal
+capacity and the potentially unbounded influx.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

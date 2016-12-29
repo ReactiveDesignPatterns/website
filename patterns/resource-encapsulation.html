@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Resource encapsulation</title>
+  <xmp style="display:none">
+_“A resource and its lifecycle are responsibilities that must be owned by one component.”_
+
+From the [Simple Component](simple-component.html) pattern, you know that every
+component does only one thing, but does it in full; in other words, each
+component is fully responsible for the functionality it provides to the rest of
+the system. If we regard that functionality as a resource that is used by other
+components—inside or outside the system—then it is clear that resource,
+responsibility, and component exactly coincide. These three terms all denote
+the same boundary: in this view, resource encapsulation and the single
+responsibility principle are the same.  The same reasoning can be applied when
+considering other resources, in particular those used to provide a component’s
+function. These are not implemented but merely are managed or represented: the
+essence of the Resource Encapsulation pattern is that you must identify that
+component into whose responsibility each resource falls, and place it there.
+The resource becomes part of that component’s responsibility. Sometimes this
+will lead you to identify the management of an external resource as a notable
+responsibility that needs to be broken out into its own simple component.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

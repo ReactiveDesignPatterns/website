@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Complex command</title>
+  <xmp style="display:none">
+_“Send compound instructions to the resource to avoid excessive network usage.”_
+
+
+You have encapsulated the resources your system uses in components that manage,
+represent, and directly implement their functionality. This allows you to
+confine responsibility not only for code-modularity reasons (chapter 6) but
+also for vertical and horizontal scalability (chapters 4 and 5) and principled
+failure handling (chapter 7). The price of all these advantages is that you
+introduce a boundary between the resource and the rest of the system that can
+only be crossed by asynchronous messaging. The Resource Loan pattern may help
+to move a resource as close as possible to its users, but this barrier will
+remain, leading to increased latency and, usually, decreased communication
+bandwidth. The core of the Complex Command pattern lies in sending the behavior
+to the resource in order to save time and network bandwidth in case of
+loquacious interchanges between resource and users; the user of the resource is
+only interested in the comparatively small result.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

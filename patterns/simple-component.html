@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Simple Component</title>
+  <xmp style="display:none">
+_“A component shall do only one thing, but do it in full.”_
+
+This pattern applies wherever a system performs multiple functions or the
+functions it performs are so complex that they need to be broken into different
+components. An example is a text editor that includes spell checking: these are
+two separate functions (editing can be done without spell checking, and
+spelling can also be checked on the finished text and does not require editing
+capabilities), but on the other hand, neither of these functions is trivial.
+
+The Simple Component pattern derives from the single responsibility
+principle that was formulated by Tom DeMarco in his 1979 book Structured
+Analysis and System Specification (Prentice Hall). In its abstract form, it
+demands to “maximize cohesion and minimize coupling.” Applied to
+object-oriented software design, it is usually stated as follows: “A class
+should have only one reason to change.”
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

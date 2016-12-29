@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Resource pool</title>
+  <xmp style="display:none">
+_“Hide an elastic pool of resources behind their owner.”_
+
+So far, we have discussed the modeling and operation of a single resource as
+well as its interaction with its clients. The astute reader will have noticed
+that something is missing from the full picture: the core principles of
+Reactive system design demand replication. Recalling the discussion from
+chapter 2, you know that resilience cannot be achieved without distributing the
+solution across all failure axes—software, hardware, human—and you know that
+elasticity requires the ability to distribute the processing load across a
+number of resources that are dynamically adjusted to the incoming demand.
+
+In chapter 13, you learned about different ways to replicate a component. The
+effort put into this mechanism depends greatly on how much the component’s
+state needs to be synchronized between replicas. This pattern focuses on the
+management and external presentation of the replicas. In keeping with the
+reasoning presented in chapters 4 and 5, it relies heavily on asynchronous
+message passing and location transparency to achieve scalability.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

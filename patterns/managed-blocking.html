@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Managed blocking</title>
+  <xmp style="display:none">
+_“Blocking a resource requires consideration and ownership.”_
+
+In the example code for how the execution component in the batch job service
+provisions new worker nodes, you have already encountered the situation that an
+API you are using is designed to block its calling thread. In the case of the
+AWS API, there are ways around that, but this is not always the case. Many
+libraries or frameworks that you may want to or have to use do not offer the
+option of event-driven interaction. Java Database Connectivity (JDBC)  is a
+well-known example that comes to mind. In order to use these APIs in a Reactive
+system component, you need to take special care to properly manage the
+resources that are implicitly seized, most notably the threads required for
+their execution.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>

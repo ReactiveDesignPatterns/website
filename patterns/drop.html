@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <title>Reactive Design Patterns — Drop</title>
+  <xmp style="display:none">
+_“Dropping requests is preferable to failing uncontrollably.”_
+
+Imagine a system that is exposed to uncontrollable user input (for example, a
+site on the internet). Any deployment will be finite in both its processing
+capability and its buffering capacity, and if user input exceeds the former for
+long enough, the latter will be used up and something will need to fail. If
+this is not foreseen explicitly, then an automatic out-of-memory killer will
+make a decision that is likely to be less satisfactory than a planned
+load-shedding mechanism—and shedding load means dropping requests.
+
+This is more of a philosophy than an implementation pattern. Network protocols,
+operating systems, programming platforms, and libraries will all drop packets,
+messages, or requests when overloaded; they do so in order to protect the
+system so that it can recover when load decreases. In the same spirit, authors
+of Reactive systems need to be comfortable with the notion of sometimes
+deliberately losing messages.
+
+---
+
+[back to the list](../index.html)
+
+  </xmp>
+  <script src="../strapdown.js"></script>
+</html>
