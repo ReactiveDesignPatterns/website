@@ -241,6 +241,7 @@ h={};g()}};typeof define==="function"&&define.amd&&define("google-code-prettify"
     updateHead: function () {
       // Use <meta> viewport so that Bootstrap is actually responsive on mobile
       $(document.head).prepend($('<meta name="viewport" content="width=device-width, initial-scale=1">')); // why was it 'max/min width = 1'?
+      $(document.head).prepend($('<meta charset="utf-8">'));
       _.importCss();
     },
 
@@ -256,7 +257,7 @@ h={};g()}};typeof define==="function"&&define.amd&&define("google-code-prettify"
       var newNode = document.createElement('div');
       newNode.className = 'navbar navbar-inverse navbar-fixed-top';
       newNode.innerHTML = '<div class="container"> <div class="navbar-header">' +
-                          (settings.toc ? navbarCollapseBtn + navbarTitle + tocInsertionPoint : navbarTitle) +
+                          (settings.toc && !settings.toc.disabled ? navbarCollapseBtn + navbarTitle + tocInsertionPoint : navbarTitle) +
                           '</div> </div>';
 
       if (settings.toc) {
