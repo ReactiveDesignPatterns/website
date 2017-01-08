@@ -1,0 +1,16 @@
+{"lectures":[
+{"uri":"introduction.html","title":"Introduction: Why Actors?"},
+{"uri":"actors.html","title":"The Actor Model"},
+{"uri":"messages.html","title":"Message Processing Semantics"},
+{"uri":"design.html","title":"Designing Actor Systems"},
+{"uri":"testing.html","title":"Testing Actor Systems"},
+{"uri":"failures.html","title":"Failure Handling with Actors"},
+{"uri":"lifecycle.html","title":"Lifecycle Monitoring and The Error Kernel"},
+{"uri":"persistence.html","title":"Persistent Actor State"},
+{"uri":"distributed1.html","title":"Actors are Distributed (Part 1)"},
+{"uri":"distributed2.html","title":"Actors are Distributed (Part 2)"},
+{"uri":"eventual-consistency.html","title":"Eventual Consistency"},
+{"uri":"composition.html","title":"Actor Composition"},
+{"uri":"scalability.html","title":"Scalability"},
+{"uri":"responsiveness.html","title":"Responsiveness"}
+]}
