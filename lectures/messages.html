@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Message Processing Semantics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,22 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Message Processing Semantics</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W05/Week5-3.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>In this lecture we take a deeper look at how Actors function. This is fundamentally defined by how they are processing messages. After revisiting their encapsulated nature we cover:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>in how far Actor behavior runs concurrently</li>
+  <li>the execution order of internal logic</li>
+  <li>the difference in message ordering guarantees between Akka and Erlang</li>
+  <li>in how far message delivery is guaranteed and how to improve on that</li>
 </ul>
 
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
+<p>These aspects are demonstrated on the bank account transfer process that was used in the first lecture to demonstrate race conditions and deadlocks. We conclude by enumerating the key effects of focusing on message-passing.</p>
 
       </div>
     </div>

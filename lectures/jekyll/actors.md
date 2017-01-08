@@ -1,11 +1,15 @@
 ---
 layout: page
 title: The Actor Model
-video: /videos/Courseware/W05/Week5-1.mp4
+video: /videos/Courseware/W05/Week5-2.mp4
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This lecture gives a more formal introduction to the Actor model. In particular we cove:
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+* some historical background
+* first steps with the Akka implementation
+* handling mutable state within an Actor
+* sending and receiving messages
+* creating and stopping Actors
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.

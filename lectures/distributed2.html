@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Actors are Distributed (Part 2)</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,20 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Actors are Distributed (Part 2)</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W06/Week6-4b.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>This lecture goes deeper on how the Akka Cluster works. In particular you will see:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>how the state of each cluster member is managed in an eventually-consistent fashion</li>
+  <li>that the feature of lifecycle monitoring demands that the membership list of the cluster must be managed with some consistency</li>
 </ul>
 
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
+<p>The effects are demonstrated on the link checker example as well.</p>
 
       </div>
     </div>

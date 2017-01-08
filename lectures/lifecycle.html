@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Lifecycle Monitoring and The Error Kernel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,22 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Lifecycle Monitoring and The Error Kernel</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W05/Week6-2.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>In this lecture we build upon what we learned about an Actor’s lifecycle and introduce facilities for monitoring it. We then discuss the consequences of hierarchical supervision for the architecture of our system. In particular we cover:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>that the only observable lifecycle transition is termination</li>
+  <li>that the inability to communicate cannot be distinguished from failure</li>
+  <li>how the DeathWatch API in Akka supports using these facts for writing resilient systems</li>
+  <li>how failure affects child Actors and consequently that important state needs to be kept near the root of the hierarchy</li>
+  <li>how logging works in Akka and how unhandled messages can be observed</li>
 </ul>
 
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
 
       </div>
     </div>

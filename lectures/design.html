@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Designing Actor Systems</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,22 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Designing Actor Systems</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W05/Week5-4.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>In this lecture we build an Actor-based link checker application in which multiple actors collaborate. On this example we see how:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>to split up the overall task into manageable subtasks</li>
+  <li>to consider the flow of information through an Actor system</li>
+  <li>to incorporate non-Actor tools and libraries that offer blocking or Future-based APIs</li>
+  <li>to install and handle timeouts, guarding against runaway processes</li>
 </ul>
 
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
+<p>Along this journey we find ourselves considering the interplay between Actor code and other concurrency abstractions, in particular considering where we must be careful so that the Actor encapsulation is not broken. We also see how the use of immutable data structures helps avoid mistakes in this regard.</p>
 
       </div>
     </div>

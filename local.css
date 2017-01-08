@@ -1,3 +1,15 @@
 .footer {
   font-size: small;
 }
+.navbar {
+  border-color: #e6e6e6;
+  border-width: 0px 1px 4px 1px;
+}
+.video {
+  border: 2px solid #e6e6e6;
+  overflow: hidden;
+}
+.video p {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 5px;
+}

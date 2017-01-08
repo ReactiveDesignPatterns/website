@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Actor Composition</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,24 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Actor Composition</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W06/Week7-1.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>This lecture discusses the structurally typed nature of Actors as implemented in untyped Akka. In particular, you learn:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>that the type of an Actor is defined by the set of messages it accepts</li>
+  <li>that the type of the <code>ActorRef</code> can fundamentally not express in which state the Actor currently is</li>
+  <li>how these liberties allow generic transformations of message streams to be implemented, for example changing message rate or timing</li>
+  <li>how the frequently encountered request–response pattern is encoded directly in Akka’s <code>ask</code> operator</li>
+  <li>that including reply-to addresses allows dynamic composition structures</li>
+  <li>how to implement non-blocking result aggregation using Futures</li>
+  <li>how to delegate risky operations</li>
+  <li>how to adapt Actor protocols by placing a façade between sender and receiver</li>
 </ul>
-
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
 
       </div>
     </div>

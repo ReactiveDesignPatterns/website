@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — The Actor Model</title>
+  <title>Reactive Design Patterns — Eventual Consistency</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,23 +42,19 @@
     <div class="row">
       <div class="col-sm-3" id="video-toc"></div>
       <div class="col-sm-9">
-        <h1>The Actor Model</h1>
+        <h1>Eventual Consistency</h1>
         <div class="video">
           <video width="100%" controls>
-            <source src="/videos/Courseware/W05/Week5-2.mp4" type="video/mp4">
+            <source src="/videos/Courseware/W06/Week6-5.mp4" type="video/mp4">
           </video>
         </div>
-        <p>This lecture gives a more formal introduction to the Actor model. In particular we cove:</p>
+        <p>This lecture takes note of the fact that all communication in a distributed system takes time—there is no instantaneous understanding of what a remote component is currently doing. We discuss this starting out from locally implemented strong consistency:</p>
 
 <ul>
-  <li>some historical background</li>
-  <li>first steps with the Akka implementation</li>
-  <li>handling mutable state within an Actor</li>
-  <li>sending and receiving messages</li>
-  <li>creating and stopping Actors</li>
+  <li>by removing the blocking waiting for synchronization we see how consistency is weakened</li>
+  <li>we discuss how an Actor is an island of consistency in a sea of inconsistency</li>
+  <li>on the example of the Akka Cluster’s member state handling we demonstrate the function and value of CRDTs (conflict-free replicated data types)</li>
 </ul>
-
-<p>The video concludes with a demonstration of running an Actor System and a summary of what Actors are according to the formal model.</p>
 
       </div>
     </div>
