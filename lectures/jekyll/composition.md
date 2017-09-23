@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Actor Composition
-video: /videos/Courseware/W06/Week7-1.mp4
+video: /videos/Courseware/W07/Week7-1.mp4
 ---
 
 This lecture discusses the structurally typed nature of Actors as implemented in untyped Akka. In particular, you learn:

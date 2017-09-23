@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Business handshake
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="business-handshake">Business handshake</h1>
 
-_“Include identifying and/or sequencing information in the message, and keep retrying until confirmation is received.”_
+<p><em>“Include identifying and/or sequencing information in the message, and keep retrying until confirmation is received.”</em></p>
 
-While discussing the [Saga pattern](saga.html), we made the implicit assumption that
+<p>While discussing the <a href="saga.html">Saga pattern</a>, we made the implicit assumption that
 communication between the saga and the affected components is reliable. We
 pictured a group of people standing in the same office and discussing the
 process without external disturbances. This is a useful way to begin, because
 it allows you to focus on the essential parts of a conversation; but we know
 that life does not always work like that—in particular in distributed systems,
 where messages can be lost or delayed due to unforeseeable, inexorable
-subsystem failures.
+subsystem failures.</p>
 
-Fortunately, we can treat the two concerns on separate levels: imagining that
+<p>Fortunately, we can treat the two concerns on separate levels: imagining that
 the conversation occurs in a busy, noisy office does not invalidate the basic
 structure of the business process we are modeling. All that is needed is to
 deliver every message more carefully, transmitting it again if it is
 overshadowed by some other event. This second level is what the Business
-Handshake pattern is all about.
+Handshake pattern is all about.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

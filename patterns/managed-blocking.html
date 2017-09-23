@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Managed blocking
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="managed-blocking">Managed blocking</h1>
 
-_“Blocking a resource requires consideration and ownership.”_
+<p><em>“Blocking a resource requires consideration and ownership.”</em></p>
 
-In the example code for how the execution component in the batch job service
+<p>In the example code for how the execution component in the batch job service
 provisions new worker nodes, you have already encountered the situation that an
 API you are using is designed to block its calling thread. In the case of the
 AWS API, there are ways around that, but this is not always the case. Many
@@ -15,13 +53,17 @@ option of event-driven interaction. Java Database Connectivity (JDBC)  is a
 well-known example that comes to mind. In order to use these APIs in a Reactive
 system component, you need to take special care to properly manage the
 resources that are implicitly seized, most notably the threads required for
-their execution.
+their execution.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

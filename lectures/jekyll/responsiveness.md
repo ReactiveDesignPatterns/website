@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Responsiveess
-video: /videos/Courseware/W06/Week7-3.mp4
+video: /videos/Courseware/W07/Week7-3.mp4
 ---
 
 In this final lecture we discuss the means and tradeoffs involved in achieving the responsiveness that is required of our systems. In particular, we cover:

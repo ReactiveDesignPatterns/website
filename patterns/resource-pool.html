@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Resource pool
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="resource-pool">Resource pool</h1>
 
-_“Hide an elastic pool of resources behind their owner.”_
+<p><em>“Hide an elastic pool of resources behind their owner.”</em></p>
 
-So far, we have discussed the modeling and operation of a single resource as
+<p>So far, we have discussed the modeling and operation of a single resource as
 well as its interaction with its clients. The astute reader will have noticed
 that something is missing from the full picture: the core principles of
 Reactive system design demand replication. Recalling the discussion from
 chapter 2, you know that resilience cannot be achieved without distributing the
 solution across all failure axes—software, hardware, human—and you know that
 elasticity requires the ability to distribute the processing load across a
-number of resources that are dynamically adjusted to the incoming demand.
+number of resources that are dynamically adjusted to the incoming demand.</p>
 
-In chapter 13, you learned about different ways to replicate a component. The
+<p>In chapter 13, you learned about different ways to replicate a component. The
 effort put into this mechanism depends greatly on how much the component’s
 state needs to be synchronized between replicas. This pattern focuses on the
 management and external presentation of the replicas. In keeping with the
 reasoning presented in chapters 4 and 5, it relies heavily on asynchronous
-message passing and location transparency to achieve scalability.
+message passing and location transparency to achieve scalability.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

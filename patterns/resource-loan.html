@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Resource loan
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="resource-loan">Resource loan</h1>
 
-_“Give a client exclusive transient access to a scarce resource without transferring ownership.”_
+<p><em>“Give a client exclusive transient access to a scarce resource without transferring ownership.”</em></p>
 
-
-A variant of the [Resource Loan](resource-loan.html) pattern is widely used in
+<p>A variant of the <a href="resource-loan.html">Resource Loan</a> pattern is widely used in
 non-Reactive systems, the most prominent example being that of a database
 connection pool. Database access is represented by a connection object via
 which arbitrary operations can be performed. The creation of connections is
@@ -17,21 +54,25 @@ back afterward. The connection pool is responsible for managing the lifecycle
 of its connections, and client code obtains temporary permission to use them.
 Failures in this scenario are communicated to the client, but their effect on
 the connection in question is handled by the pool—the pool owns and supervises
-the connections.
+the connections.</p>
 
-In a Reactive system, you strive to minimize contention as well as the need for
+<p>In a Reactive system, you strive to minimize contention as well as the need for
 coordination: hence, the classic database connection pool usually only features
 as an internal implementation detail of a component whose data storage is
 realized by means of a relational database. But you will frequently encounter
 the use of scarce resources in your systems, and the same philosophy that
 drives the connection pool abstraction is useful in Reactive system design as
-well.
+well.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

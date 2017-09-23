@@ -1,2 +1,3 @@
 .*.swp
-lectures/jekyll/_site
+jekyll/_site
+*/jekyll/_site

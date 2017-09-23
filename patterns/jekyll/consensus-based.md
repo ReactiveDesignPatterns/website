@@ -1,0 +1,17 @@
+---
+layout: page
+---
+# Multiple-master: Consensus-based
+
+_“Keep multiple copies of a service running in different locations, accept modifications everywhere, and disseminate all modifications among them.”_
+
+Given a group of people, we have a basic understanding of what consensus means:
+within the group, all members agree on a proposal and acknowledge that this
+agreement is unanimous. From personal experience, we know that reaching
+consensus is a process that can take quite a bit of time and coordination
+effort, especially if the matter starts out as being contentious—in other
+words, if initially there are multiple competing proposals, and the group must
+decide which single one to support.
+
+
+[back to the list](../categories.html)

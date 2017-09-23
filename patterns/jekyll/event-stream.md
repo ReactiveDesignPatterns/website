@@ -1,0 +1,22 @@
+---
+layout: page
+---
+# Event stream
+
+_“Publish the events emitted by a component so that the rest of the system can derive knowledge from them.”_
+
+The events that a component stores in its log represent the sum of all the
+knowledge it has ever possessed. This is a treasure trove for the rest of the
+system to delve into: although the shopping cart system is only interested in
+maintaining the current state of customer activity, other concerns are
+tangential to it, such as tracking the popularity of various products. This
+secondary concern does not need to be updated in a guaranteed fashion in real
+time; it does not matter if it lags behind the most current information by a
+few seconds (individual humans usually would not be able to notice even a delay
+of hours in this information). Therefore, it would be an unnecessary burden to
+have the shopping cart component provide this summary information, and it would
+also violate the Simple Component pattern by introducing a second
+responsibility.
+
+
+[back to the list](../categories.html)

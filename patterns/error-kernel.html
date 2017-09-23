@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Error Kernel
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="error-kernel">Error Kernel</h1>
 
-_“In a supervision hierarchy, keep important application state or functionality near the root while delegating risky operations towards the leaves.”_
+<p><em>“In a supervision hierarchy, keep important application state or functionality near the root while delegating risky operations towards the leaves.”</em></p>
 
-This pattern builds on the [Simple Component](./simple-component.html) pattern and is applicable wherever
+<p>This pattern builds on the <a href="./simple-component.html">Simple Component</a> pattern and is applicable wherever
 components with different failure probability and reliability requirements are
 combined into a larger system or application—some functions of the system must
 never go down, whereas others are necessarily exposed to failure. Applying the
 Simple Component pattern will frequently leave you in this position, so it pays
-to familiarize yourself well with the Error Kernel pattern.
+to familiarize yourself well with the Error Kernel pattern.</p>
 
-This pattern has been established in Erlang programs for decades and was one of
+<p>This pattern has been established in Erlang programs for decades and was one of
 the main inspirations for Jonas Bonér to implement an Actor framework—Akka—on
 the JVM. The name Akka was originally conceived as a palindrome of Actor
-Kernel, referring to this core design pattern.
+Kernel, referring to this core design pattern.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

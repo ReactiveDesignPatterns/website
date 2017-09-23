@@ -1,0 +1,18 @@
+---
+layout: page
+---
+# Event sourcing
+
+_“Perform state changes only by applying events. Make them durable by storing the events in a log.”_
+
+Looking at the [Domain Object pattern](domain-object.html) example, you can see
+that all state changes the manager actor performs are coupled to an event that
+is sent back to the client that requested this change. Because these events
+contain the full history of how the state of the domain object evolved, you may
+as well use it for the purpose of making the state changes persistent—this, in
+turn, makes the state of the domain object persistent. This pattern was
+described in 2005 by Martin Fowler  and picked up by Microsoft Research,  and
+it has shaped the design of the Akka Persistence module.
+
+
+[back to the list](../categories.html)

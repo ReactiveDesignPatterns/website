@@ -1,0 +1,25 @@
+---
+layout: page
+---
+# Let-it-crash
+
+_“Prefer a full component restart to internal failure handling.”_
+
+In chapter 7 of the book we discuss principled failure handling, noting that the
+internal recovery mechanisms of each component are limited because they are not
+sufficiently separated from the failing parts—everything within a component can
+be affected by a failure. This is especially true for hardware failures that
+take down the component as a whole, but it is also true for corrupted state
+that is the result of some programming error only observable in rare
+circumstances. For this reason, it is necessary to delegate failure handling to
+a supervisor instead of attempting to solve it within the component.
+
+This principle is also called crash-only software: the idea is that transient
+but rare failures are often costly to diagnose and fix, making it preferable to
+recover a working system by rebooting parts of it. This hierarchical
+restart-based failure handling makes it possible to greatly simplify the
+failure model and at the same time leads to a more robust system that even has
+a chance to survive failures that were entirely unforeseen.
+
+
+[back to the list](../categories.html)

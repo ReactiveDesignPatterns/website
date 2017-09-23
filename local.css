@@ -1,5 +1,17 @@
+h1 {
+  font-size: 24px;
+  color: #999;
+}
+h2 {
+  font-size: 20px;
+  color: #999;
+}
 .footer {
   font-size: small;
+  margin-bottom: 2em;
+}
+.footer .col-md-6 {
+  padding: 0px;
 }
 .navbar {
   border-color: #e6e6e6;
@@ -8,8 +20,16 @@
 .video {
   border: 2px solid #e6e6e6;
   overflow: hidden;
+  margin: 1.5em 0px;
 }
 .video p {
   border-top: 1px solid #e6e6e6;
   padding-top: 5px;
+}
+p > a > img {
+  margin: 2em;
+}
+blockquote {
+  font-style: italic;
+  border-left: none;
 }

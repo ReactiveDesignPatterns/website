@@ -1,0 +1,20 @@
+---
+layout: page
+---
+# Active–passive replication
+
+_“Keep multiple copies of the service running in different locations, but only accept modifications to the state in one location at any given time.”_
+
+This pattern is also sometimes referred to as failover or master-slave
+replication. You have already seen one particular form of failover: the ability
+to restart a component means that after a failure, a new instance is created
+and takes over functionality, like passing the baton from one runner to the
+next. For a stateful service, the new instance accesses the same persistent
+storage location as the previously failed one, recovering the state before the
+crash and continuing from there. This works only as long as the persistent
+storage is intact; if that fails, then restarting is not possible—the service
+will forget all of its previous state and start from scratch. Imagine your web
+shop forgetting about all registered users—that would be a catastrophe!
+
+
+[back to the list](../categories.html)

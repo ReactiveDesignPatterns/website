@@ -1,0 +1,23 @@
+---
+layout: page
+---
+# Self-contained message
+
+_“Each message will contain all information needed to process a request as well as to understand its response.”_
+
+When sending a request, you need to remember what you want to do with the
+response that will eventually come back. In other words, you need to manage the
+state of the larger operation that this exchange is a part of while the request
+and response travel between components. This state management can be done
+entirely by the requester—storing contextual information—or it can be pushed
+out of it by having the entire context travel with the request and response
+across the network. In practice, this responsibility is usually shared, leaving
+part of the state in the requester and having part of it travel with the
+message. The point of this pattern is that you should strive to include
+sufficient information in the message so the state that is relevant to the
+current request is fully represented—removing and relocating relevant
+information should be considered a premature optimization until proven
+otherwise.
+
+
+[back to the list](../categories.html)

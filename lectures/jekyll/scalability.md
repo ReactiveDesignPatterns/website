@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scalability
-video: /videos/Courseware/W06/Week7-2.mp4
+video: /videos/Courseware/W07/Week7-2.mp4
 ---
 
 This lecture discusses scalability, starting out from contrasting this characteristic with performance—the goal that is often inadequately placed first. We cover:

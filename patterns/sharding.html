@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Sharding
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="sharding">Sharding</h1>
 
-_“Scale out the management of a large number of domain objects by grouping them into shards based on unique and stable object properties.”_
+<p><em>“Scale out the management of a large number of domain objects by grouping them into shards based on unique and stable object properties.”</em></p>
 
-The [Domain Object pattern](domain-object.html) gives you the ability to wrap
+<p>The <a href="domain-object.html">Domain Object pattern</a> gives you the ability to wrap
 the domain’s state in small components that can, in principle, be distributed
 easily across a cluster of network nodes in order to provide the resources for
 representing even very large domains that cannot be held in memory by a single
 machine. The difficulty then becomes how to address the individual domain
 objects without having to maintain a directory that lists every object’s
 location—such a directory could easily reach a size that is impractical to hold
-in memory.
+in memory.</p>
 
-The Sharding pattern places an upper bound on the size of the directory by
+<p>The Sharding pattern places an upper bound on the size of the directory by
 grouping the domain objects into a configurable number of shards—the domain is
 fractured algorithmically into pieces of manageable size. The term
 algorithmically means the association between objects and shards is determined
 by a fixed formula that can be evaluated whenever an object needs to be
-located.
+located.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

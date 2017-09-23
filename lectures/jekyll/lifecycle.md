@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Lifecycle Monitoring and The Error Kernel
-video: /videos/Courseware/W05/Week6-2.mp4
+video: /videos/Courseware/W06/Week6-2.mp4
 ---
 
 In this lecture we build upon what we learned about an Actor’s lifecycle and introduce facilities for monitoring it. We then discuss the consequences of hierarchical supervision for the architecture of our system. In particular we cover:

@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc-disabled >
-# Saga
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="saga">Saga</h1>
 
-_“Divide long-lived, distributed transactions into quick local ones with compensating actions for recovery.”_
+<p><em>“Divide long-lived, distributed transactions into quick local ones with compensating actions for recovery.”</em></p>
 
-The term saga was coined by Hector Garcia-Molina.  His paper describes a scheme
+<p>The term saga was coined by Hector Garcia-Molina.  His paper describes a scheme
 for breaking up long-lived business transactions in order to shorten the time
 period during which databases need to hold locks—these locks are needed to
 ensure atomicity and consistency of the transaction, the downside of which is
-that other transactions touching the same data cannot proceed concurrently.
+that other transactions touching the same data cannot proceed concurrently.</p>
 
-In a distributed system, you need to break up transactions involving multiple
+<p>In a distributed system, you need to break up transactions involving multiple
 participants for other reasons: obtaining a shared lock is an expensive
 operation that can even be impossible in the face of certain failures like
 network partitions. As we discussed in chapter 8, the key to scalability and
@@ -20,13 +58,17 @@ loose coupling is to consider each component an island of delimited
 consistency. But how do you model business transactions that require inputs
 from multiple components while also effecting modifications to multiple
 components? It turns out the research topic of sagas provides an effective,
-robust solution for many use cases.
+robust solution for many use cases.</p>
 
+<p><a href="../categories.html">back to the list</a></p>
 
-[back to the list](../categories.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="../strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

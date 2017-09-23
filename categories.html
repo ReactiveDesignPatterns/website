@@ -1,62 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <title>Reactive Design Patterns</title>
-  <xmp style="display:none" toc >
+<head>
+  <title>Reactive Design Patterns — </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/marked.js"></script>
+  <script src="/format.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Reactive Design Patterns</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patterns<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/categories.html">by category</a></li>
+              <li><a href="/alphabetical.html">alphabetically</a></li>
+            </ul>
+          </li>
+          <li><a href="/videos.html">Video courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="patterns-by-category">Patterns by category</h1>
 
-[![Get a 39% discount with code 39kuhn](kuhn_cover150.jpg "Get a 39% discount with code 39kuhn")](https://manning.com/books/reactive-design-patterns?a_aid=ReactiveDesignPatternsKuhn&a_bid=b336a46f)
+<h2 id="fault-tolerance-and-recovery-patterns">Fault tolerance and recovery patterns</h2>
 
-# Patterns by category
+<ul>
+  <li><a href="./patterns/simple-component.html">Simple Component</a></li>
+  <li><a href="./patterns/error-kernel.html">Error Kernel</a></li>
+  <li><a href="./patterns/let-it-crash.html">Let-it-crash</a></li>
+  <li><a href="./patterns/circuit-breaker.html">Circuit Breaker</a></li>
+</ul>
 
-## Fault tolerance and recovery patterns
+<h2 id="replication-patterns">Replication patterns</h2>
 
-* [Simple Component](./patterns/simple-component.html)
-* [Error Kernel](./patterns/error-kernel.html)
-* [Let-it-crash](./patterns/let-it-crash.html)
-* [Circuit Breaker](./patterns/circuit-breaker.html)
+<ul>
+  <li><a href="./patterns/active–passive.html">Active–passive</a></li>
+  <li>Multiple-master
+    <ul>
+      <li><a href="./patterns/consensus-based.html">Consensus-based</a></li>
+      <li><a href="./patterns/conflict-detection-and-resolution.html">Conflict detection and resolution</a></li>
+      <li><a href="./patterns/conflict-free-replicated-data-types.html">Conflict-free replicated data types</a></li>
+    </ul>
+  </li>
+  <li><a href="./patterns/active–active.html">Active–active</a></li>
+</ul>
 
-## Replication patterns
+<h2 id="resource-management-patterns">Resource management patterns</h2>
 
-* [Active–passive](./patterns/active–passive.html)
-* Multiple-master
-    * [Consensus-based](./patterns/consensus-based.html)
-    * [Conflict detection and resolution](./patterns/conflict-detection-and-resolution.html)
-    * [Conflict-free replicated data types](./patterns/conflict-free-replicated-data-types.html)
-* [Active–active](./patterns/active–active.html)
+<ul>
+  <li><a href="./patterns/resource-encapsulation.html">Resource encapsulation</a></li>
+  <li><a href="./patterns/resource-loan.html">Resource loan</a></li>
+  <li><a href="./patterns/complex-command.html">Complex command</a></li>
+  <li><a href="./patterns/resource-pool.html">Resource pool</a></li>
+  <li><a href="./patterns/managed-blocking.html">Managed blocking</a></li>
+</ul>
 
-## Resource management patterns
+<h2 id="message-flow-patterns">Message flow patterns</h2>
 
-* [Resource encapsulation](./patterns/resource-encapsulation.html)
-* [Resource loan](./patterns/resource-loan.html)
-* [Complex command](./patterns/complex-command.html)
-* [Resource pool](./patterns/resource-pool.html)
-* [Managed blocking](./patterns/managed-blocking.html)
+<ul>
+  <li><a href="./patterns/request-response.html">Request–response</a></li>
+  <li><a href="./patterns/self-contained-message.html">Self-contained message</a></li>
+  <li><a href="./patterns/ask-pattern.html">Ask pattern</a></li>
+  <li><a href="./patterns/forward-flow.html">Forward Flow</a></li>
+  <li><a href="./patterns/aggregator.html">Aggregator</a></li>
+  <li><a href="./patterns/saga.html">Saga</a></li>
+  <li><a href="./patterns/business-handshake.html">Business Handshake</a></li>
+</ul>
 
-## Message flow patterns
+<h2 id="flow-control-patterns">Flow control patterns</h2>
 
-* [Request–response](./patterns/request-response.html)
-* [Self-contained message](./patterns/self-contained-message.html)
-* [Ask pattern](./patterns/ask-pattern.html)
-* [Forward Flow](./patterns/forward-flow.html)
-* [Aggregator](./patterns/aggregator.html)
-* [Saga](./patterns/saga.html)
-* [Business Handshake](./patterns/business-handshake.html)
+<ul>
+  <li><a href="./patterns/pull.html">Pull</a></li>
+  <li><a href="./patterns/managed-queue.html">Managed queue</a></li>
+  <li><a href="./patterns/drop.html">Drop</a></li>
+  <li><a href="./patterns/throttling.html">Throttling</a></li>
+</ul>
 
-## Flow control patterns
+<h2 id="state-management-and-persistence-patterns">State management and persistence patterns</h2>
 
-* [Pull](./patterns/pull.html)
-* [Managed queue](./patterns/managed-queue.html)
-* [Drop](./patterns/drop.html)
-* [Throttling](./patterns/throttling.html)
+<ul>
+  <li><a href="./patterns/domain-object.html">Domain object</a></li>
+  <li><a href="./patterns/sharding.html">Sharding</a></li>
+  <li><a href="./patterns/event-sourcing.html">Event sourcing</a></li>
+  <li><a href="./patterns/event-stream.html">Event stream</a></li>
+</ul>
 
-## State management and persistence patterns
 
-* [Domain object](./patterns/domain-object.html)
-* [Sharding](./patterns/sharding.html)
-* [Event sourcing](./patterns/event-sourcing.html)
-* [Event stream](./patterns/event-stream.html)
-
-  </xmp>
+      </div>
+    </div>
+  </div>
   <hr/>
-  <p class="container footer">Copyright &copy;2017 Roland Kuhn</p>
-  <script src="./strapdown.js"></script>
+  <div class="container footer">
+    <div class="col-md-6">Copyright &copy;2017 Roland Kuhn</div>
+    <div class="col-md-6 text-right"><a href="impressum.html">Impressum</a></div>
+  </div>
+</body>
 </html>

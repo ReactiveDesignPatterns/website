@@ -1,0 +1,18 @@
+---
+layout: page
+---
+# Forward flow
+
+_“Let the information and the messages flow directly toward their destination where possible.”_
+
+This pattern sounds intuitive, maybe even trivial: why would you deliberately
+send messages via detours when that is not required? The answer is that this
+rarely occurs consciously; it is the result of applying a convenient,
+well-known pattern overeagerly. The pattern in question is your good friend the
+Request-Response pattern, with or without the Ask pattern’s sugar coating.
+Overusing this pattern leads to unnecessary consumption of network bandwidth
+and increased response latency; thinking about forward flow lets you recognize
+these cases and improve your service quality.
+
+
+[back to the list](../categories.html)
