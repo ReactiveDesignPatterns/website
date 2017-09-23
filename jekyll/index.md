@@ -18,7 +18,7 @@ You are also welcome to contribute to this website, please check out [the source
 
 ## Praise
 
-Andy Hicks, on the book cover:
+Andy Hicks, from the book cover:
 
 > This book is so reactive, it belongs on the left-hand side of the periodic table!
 
