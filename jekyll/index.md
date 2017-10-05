@@ -16,6 +16,11 @@ The appendices contain a diagramming scheme for reactive systems, the discussion
 Although carefully edited, a few mistakes remain in the final manuscript; if you find one, please check the [listing of errata](kuhn_ReactiveDesignPatterns_err1.html) before reporting on the [Manning author forum](https://forums.manning.com/forums/reactive-design-patterns).
 You are also welcome to contribute to this website, please check out [the source](https://github.com/ReactiveDesignPatterns/website/).
 
+## What you can find on this site
+
+* A summary of the architecture and design patterns, both [by categories](categories.html) and [sorted alphabetically](alphabetical.html).
+* The [video courses](videos.html) from the Coursera course «Principles of Reactive Programming».
+
 ## Praise
 
 Andy Hicks, from the book cover:
