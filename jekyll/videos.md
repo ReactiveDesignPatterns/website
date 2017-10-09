@@ -11,7 +11,7 @@ They nicely complement the book with video lectures.
 The videos are encoded in MP4 format and are less than 1GB in total.
 Display relies upon HTML5 features and allows adjustments to the playback speed; for best results a modern browser is recommended.
 
-Teaching the course was an awesome experience, but I never made any money off of it. In case you feel like buying me a beer, here’s a [paypal link](https://paypal.me/RolandKuhn) that would allow you to do so. Many thanks!
+Teaching the course was an awesome experience, but I never made any money off of it. In case you feel like buying me a beverage (beer, coffee, tea), here’s a [paypal link](https://paypal.me/RolandKuhn) that would allow you to do so. Many thanks!
 <span style="font-size:small;padding:8px;position:absolute;left:0;top:0"><i>Side note:</i></span>
 <span style="position:absolute;right:0;top:0;height:100%;display:flex;flex-direction:column;justify-content:center;">
   <img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png" border="0" alt="PayPal Logo" style="padding:8px;" />
