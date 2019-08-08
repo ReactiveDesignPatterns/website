@@ -44,10 +44,10 @@ Teaching the course was an awesome experience, but I never made any money off of
 
 ## Fourth week: typed actors
 
-* [Introduction to Protocols](typed_protocols.html) [11:28]
-* [Protocols in Akka Typed](typed_akka.html) [14:27]
-* [Testing Akka Typed Behaviors](typed_testing.html) [8:29]
-* [Akka Typed Facilities](typed_facilities.html) [16:02]
-* [Akka Typed Persistence](typed_persistence.html) [12:49]
-* [Supervision revisited](typed_supervision.html) [10:02]
+* [Introduction to Protocols](lectures/typed_protocols.html) [11:28]
+* [Protocols in Akka Typed](lectures/typed_akka.html) [14:27]
+* [Testing Akka Typed Behaviors](lectures/typed_testing.html) [8:29]
+* [Akka Typed Facilities](lectures/typed_facilities.html) [16:02]
+* [Akka Typed Persistence](lectures/typed_persistence.html) [12:49]
+* [Supervision revisited](lectures/typed_supervision.html) [10:02]
 
