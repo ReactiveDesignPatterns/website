@@ -12,5 +12,11 @@
 {"uri":"eventual-consistency.html","title":"Eventual Consistency"},
 {"uri":"composition.html","title":"Actor Composition"},
 {"uri":"scalability.html","title":"Scalability"},
-{"uri":"responsiveness.html","title":"Responsiveness"}
+{"uri":"responsiveness.html","title":"Responsiveness"},
+{"uri":"typed_protocols.html","title":"Introduction to Protocols"},
+{"uri":"typed_akka.html","title":"Protocols in Akka Typed"},
+{"uri":"typed_testing.html","title":"Testing Akka Typed Behaviors"},
+{"uri":"typed_facilities.html","title":"Akka Typed Facilities"},
+{"uri":"typed_persistence.html","title":"Akka Typed Persistence"},
+{"uri":"typed_supervision.html","title":"Supervision revisited"}
 ]}

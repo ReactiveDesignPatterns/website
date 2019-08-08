@@ -6,7 +6,8 @@ layout: page
 
 The Coursera course _Priniples of Reactive Programming_ was presented twice—in 2013 and in 2014—by Martin Odersky, Erik Meijer, and Roland Kuhn.
 The final three weeks of this seven-week course are taught by Roland Kuhn and treat Actors as a model of distributed computation and reactive design.
-They nicely complement the book with video lectures.
+Together with the material on Akka Typed from the edX course _Programming Reactive Systems_ that started running in 2019 (with Julien Richard-Foy and Konrad Malawski)
+they nicely complement the book with video lectures.
 
 The videos are encoded in MP4 format and are less than 1GB in total.
 Display relies upon HTML5 features and allows adjustments to the playback speed; for best results a modern browser is recommended.
@@ -40,3 +41,13 @@ Teaching the course was an awesome experience, but I never made any money off of
 * [Actor Composition](lectures/composition.html) [20:14]
 * [Scalability](lectures/scalability.html) [17:00]
 * [Responsiveness](lectures/responsiveness.html) [11:13]
+
+## Fourth week: typed actors
+
+* [Introduction to Protocols](typed_protocols.html) [11:28]
+* [Protocols in Akka Typed](typed_akka.html) [14:27]
+* [Testing Akka Typed Behaviors](typed_testing.html) [8:29]
+* [Akka Typed Facilities](typed_facilities.html) [16:02]
+* [Akka Typed Persistence](typed_persistence.html) [12:49]
+* [Supervision revisited](typed_supervision.html) [10:02]
+

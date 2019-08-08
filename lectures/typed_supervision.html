@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reactive Design Patterns — </title>
+  <title>Reactive Design Patterns — Supervision revisited</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,23 +39,31 @@
     
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <h1 id="impressum">Impressum</h1>
+      <div class="col-sm-3" id="video-toc"></div>
+      <div class="col-sm-9">
+        <h1>Supervision revisited</h1>
+        <div class="video">
+          <video width="100%" controls>
+            <source src="https://d3jf8l8djqa87a.cloudfront.net/videos/Courseware/W08/Supervision_revisited_V2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>This lecture discusses how supervision in Akka Typed differs from the
+previously discussed supervision implemented in untyped Akka actors:</p>
 
-<p><strong>Angaben gemäß §5 TMG:</strong></p>
+<ul>
+  <li>no more paused actors</li>
+  <li>no private state leaks by potentially non-serializable exception objects</li>
+  <li>failure-stop model as foreseen by the Actor Model</li>
+</ul>
 
-<p>Dr. Roland Kuhn<br />
-Am Fasanenhof 16<br />
-34125 Kassel</p>
+<p>The interesting part is that supervision is implemented as a purely functional
+behavior decorator, show-casing how libraries can add powerful capabilities to
+the Akka Typed system.</p>
 
-<p><strong>Kontakt:</strong></p>
-
-<p>info@reactivedesignpatterns.com</p>
-
-<p><strong>Verantwortlich für den Inhalt nach §55 Abs. 2 RStV:</strong></p>
-
-<p>Dr. Roland Kuhn</p>
-
+        <div style="margin-top:3em">
+          <a href="https://lunatech.com/"><img style="float:right;margin-left:1em;margin-top:8px" src="http://lunatech.com/assets/images/Lunatech_Logo_Line_RGB_Pos_A.png" width="160px" height="20px" /></a>
+          <p style="text-align:right;font-size:small">Hosting of the video<br/>sponsored by</p>
+        </div>
       </div>
     </div>
   </div>
