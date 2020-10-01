@@ -1,1 +1,2 @@
-This holds the source files for the website https://www.reactivedesignpatterns.com/.
+## Visit the link below for access to website files
+https://www.reactivedesignpatterns.com/.
