@@ -2,10 +2,10 @@
 layout: page
 ---
 
-[![Get a 39% discount with code 39kuhn](kuhn_cover.jpg "Get a 39% discount with code 39kuhn")](https://manning.com/books/reactive-design-patterns?a_aid=ReactiveDesignPatternsKuhn&a_bid=b336a46f)
+[![Get a 39% discount with code 39kuhn](kuhn_cover.jpg "Get a 39% discount with code 39kuhn")](https\://manning.com/books/reactive-design-patterns?utm_source=ReactiveDesignPatternsKuhn&utm_medium=affiliate&utm_campaign=book_kuhn_reactive_2_21_17&a_aid=ReactiveDesignPatternsKuhn&a_bid=b336a46f)
 {: style="text-align: center"}
 
-This website accompanies the book [_Reactive Design Patterns_](https://manning.com/books/reactive-design-patterns?a_aid=ReactiveDesignPatternsKuhn&a_bid=b336a46f) by Roland Kuhn with contributions from Jamie Allen and Brian Hanafee.
+This website accompanies the book [_Reactive Design Patterns_](https://manning.com/books/reactive-design-patterns?utm_source=ReactiveDesignPatternsKuhn&utm_medium=affiliate&utm_campaign=book_kuhn_reactive_2_21_17&a_aid=ReactiveDesignPatternsKuhn&a_bid=b336a46f) by Roland Kuhn with contributions from Jamie Allen and Brian Hanafee.
 The book presents a set of architecture and design patterns that have proven useful in creating _reactive systems_.
 
 The first part (pages 1–63) introduces the concepts and background from the [_Reactive Manifesto_](https://www.reactivemanifesto.org/), rounded up with a real-world example and a tour of the tools of the trade.
