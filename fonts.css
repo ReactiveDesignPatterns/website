@@ -1,0 +1,25 @@
+/* For license and copyright of all fonts below see https://www.fontsquirrel.com/license/source-sans-pro */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url(SourceSansPro-Italic.otf) format('opentype'), url(SourceSansPro-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(SourceSansPro-Light.otf) format('opentype'), url(SourceSansPro-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(SourceSansPro-Regular.otf) format('opentype'), url(SourceSansPro-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url(SourceSansPro-Bold.otf) format('opentype'), url(SourceSansPro-Bold.ttf) format('truetype');
+}
